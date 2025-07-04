@@ -1,0 +1,19 @@
+:root {
+  --bg-color: #E4E6E9;
+  --text-color: #2C2C2C;
+  --header-bg: #C2C5CA;
+  --accent-color: #2e109b;
+  --hover-color: #4E5D6C;
+  --btn-text: #F8F9FA;
+  --footer-bg: #C2C5CA;
+}
+
+[data-theme="dark"] {
+  --bg-color: #343A40;
+  --text-color: #F8F9FA;
+  --header-bg: #4E5D6C;
+  --accent-color: #2486D5;
+  --hover-color: #C2C5CA;
+  --btn-text: #2C2C2C;
+  --footer-bg: #4E5D6C;
+}
