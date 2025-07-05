@@ -12,8 +12,6 @@
      <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
     crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
-    crossorigin="anonymous"></script>
 </head>
 <body class="body">
     <header>
@@ -26,39 +24,65 @@
                     <span><i class="fa-solid fa-lock"></i> En este sitio protegemos tus datos</span>
                  </div>
                  <div>
-                    <span><i class="fa-solid fa-question"></i> ¿Necesitas Ayuda?</span>
+                    <span class="help"><a href=""><i class="fa-solid fa-question"></i> ¿Necesitas Ayuda?</a></span>
                     </div>
                 </div>
             </div>
     </header>
-    <section class="container-lg">
-        <div class="register">
+    <main class="form-body">
+ <div class="form-container">
+    <form class="adoption-form">
+        <h1 class="adoption-form_title">Registrarse en Rolling Tech</h1>
 
-            
-
-            <div class="div-form">
-                <form class="form">
-                    <div class="form-item">
-                        <input type="text" placeholder="Nombre">
-                    </div class="form-item">
-                    <div class="form-item">
-                        <input type="text" placeholder="Nombre de usuario">
-                    </div>
-                    <div class="form-item">
-                        <input type="text" placeholder="e-mail">
-                    </div>
-                    <div class="form-item">
-                        <input type="text" placeholder="Contraseña">
-                    </div>
-                    <div class="form-item">
-                        <input type="text" placeholder="Repetir contraseña">
-                    </div>
-                    <button type="submit" class="boton">Registrarme</button>
-                </form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
-            
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
         </div>
-    </section>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="number" id="dni" name="dni" required max="90000000">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="telefono">Número de celular</label>
+                <input type="number" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-promotion">
+                <label for="">Recibir ofertas promocionales</label>
+                <input type="radio" id="promocion" name="promocion" value="true" required>
+            </div>
+            <div class="form-group">
+                <p>Al registrarse usted acepta los <a href="">Terminos y condiciones</a></p>
+            </div>
+        </div>
+        <div class="form-buttons">
+                <a href="/index.html" class="cancel-button">Cancelar</a>
+                <button type="submit" class="submit-button">Registrarse!</button>
+            </div>
+    </form>
+ </div>
+
+
+
+    </main>
 
 <!-- BOOSTRAP 5 -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
