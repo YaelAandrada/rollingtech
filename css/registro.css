@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body{
+    background-color: #E4E6E9;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-png{
+    
+   }
+
+.div-form{
+    display: flex;
+    justify-content: flex start;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.form-item{
+    margin-bottom: 5px;
+}
+
+.boton{
+    border: 1px solid black;
+}
