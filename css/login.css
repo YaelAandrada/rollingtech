@@ -4,3 +4,15 @@
     align-items: center;
     height: 100vh;
 }
+
+.content-img{
+    width: 80px;
+}
+
+img{
+    width: 100%;
+}
+
+h2, h4{
+    font-family: 'Orbitron';
+}
