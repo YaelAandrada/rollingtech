@@ -34,7 +34,7 @@
     <div class="row">
       <div class="col-md-5 mb-4">
         <div class="d-flex align-items-start py-3">
-          <div class="fs-3 px-3">
+          <div class="icon fs-3 px-3">
             <i class="fa-solid fa-envelope"></i>
           </div>
           <div class="d-flex flex-column">
@@ -44,7 +44,7 @@
         </div>
 
         <div class="d-flex align-items-start py-3">
-          <div class="fs-3 px-3">
+          <div class="icon fs-3 px-3">
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="d-flex flex-column">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="d-flex align-items-start py-3">
-          <div class="fs-3 px-3">
+          <div class="icon fs-3 px-3">
             <i class="fa-solid fa-location-dot"></i>
           </div>
           <div class="d-flex flex-column">
@@ -74,11 +74,17 @@
       <div class="col-md-7">
         <form class="row">
           <div class="col-lg-6 py-2">
-            <input type="text" name="nombre" class="form-control shadow-sm" placeholder="Tu Nombre" aria-label="Tu Nombre" required>
+            <input type="text" name="nombre" class="form-control shadow-sm" placeholder="Tu Nombre" aria-label="Tu Nombre" pattern="[A-Z][a-zA-ZáéíóúÁÉÍÓÚ\s]+" minlength="3" maxlength="20" required >
+          </div>
+          <div class="col-lg-6 py-2">
+            <input type="text" name="apellido" class="form-control shadow-sm" placeholder="Tu Apellido" aria-label="Tu Apellido" pattern="[A-Z][a-zA-ZáéíóúÁÉÍÓÚ\s]+" minlength="3" maxlength="20" required >
           </div>
 
           <div class="col-lg-6 py-2">
-            <input type="email" name="email" class="form-control shadow-sm" placeholder="Tu Email" aria-label="Tu Email" required>
+            <input type="email" name="email" class="form-control shadow-sm" placeholder="Tu Email" aria-label="Tu Email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" minlength="3" maxlength="20" required>
+          </div>
+          <div class="col-lg-6 py-2">
+            <input type="number" name="telefono" class="form-control shadow-sm" placeholder="Tu telefono" aria-label="Tu telefono" required>
           </div>
 
           <div class="col-12 py-2">
