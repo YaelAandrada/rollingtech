@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "Roboto";
 }
+
+
 
 .body{
     background-color: #E4E6E9;
@@ -14,7 +16,12 @@
     align-items: center;
     justify-content: space-around;
     margin-bottom: 9rem;
-    background: #d4d6d8;
+    background: #343A40;
+}
+
+.logo-title{
+    font-size: larger;
+    font-family: "Orbitron";
 }
 
 .form-body{
@@ -26,7 +33,7 @@
     background: url(/img/gatitos/backgroundForm.jpg) repeat;
     background-size: cover;
     font-weight: bolder;
-    color: var(--colorFormBody);
+    color: #343A40;
 }
 
 .form-container{
@@ -48,6 +55,7 @@
     text-align: center;
     font-size: 1.4em;
     margin-bottom: 10px;
+    font-family: "Orbitron";
 }
 
 .form-row{
@@ -69,7 +77,7 @@ label{
 
 input{
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid ;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -97,7 +105,7 @@ button{
     color: white;
     font-size: 1em;
     cursor: pointer;
-    background-color: #c4b2b2;
+    background-color: #f70303;
     &:hover{
         background-color:var(--colorHeaderFooter);
         outline: 2px solid white;
@@ -106,7 +114,7 @@ button{
 }
 
 .submit-button{
-    background-color: var(--colorBtnRegistro);
+    background-color: blue;
     font-weight: bold;
     &:hover{
         outline: 1px solid white;
