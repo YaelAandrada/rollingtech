@@ -47,11 +47,13 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item active" href="/index.html">Inicio</a></li>
-            <li><a class="dropdown-item" href="#">Productos</a></li>
+            <li><a class="dropdown-item" href="/html/categorias.html">Productos</a></li>
             <li><a class="dropdown-item" href="#">Contacto</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
           </ul>
         </div>
       </div>
@@ -61,7 +63,7 @@
   <!-- Navbar de categorías -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-1">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Categoría</a>
+      <a class="navbar-brand" href="/html/categorias.html">Categoría</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -320,68 +322,55 @@
 
 
     </main>
-<footer class="conteiner-footer content bg-primary bg-dark h-auto flex-wrap">
-      <div class="contentItemFoot d-flex align-items-center w-100 justify-content-center">
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
 
-      <!-- TITLE Y LOGO -->
-        <div class="my-4">
-          <div class="conteiner-log">
-            <figure class="content-img">
-              <img src="/img/favicon.png" alt="Logo-de-la-pagina">
-            </figure>
-            <div class="title-content">
-              <h2>ROLLINGTECH</h2>
-              <h4>INSUMOS ELECTRONICOS</h4>
-            </div>
-          </div>
+      <!-- Logo y título -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="d-flex flex-column align-items-center align-items-md-start">
+          <img src="/img/favicon.png" alt="Logo-de-la-pagina" class="mb-2" style="width: 60px;">
+          <h2 class="h5 mb-0">ROLLINGTECH</h2>
+          <h4 class="h6">INSUMOS ELECTRÓNICOS</h4>
         </div>
-
-      <!-- ALGO ACERCA NOSOTROS -->
-        <div class="content m-4 d-flex flex-column">
-          <div class="text-white">
-            <h2 class="titleNoso fs-3">Acerca de nosotros.</h2>
-          </div>
-          
-          <div class="text-body-tertiary">
-            <small class="text-secondary">Somos un el grupo número 3 del curso de RollingCode, nuestros profesores/mentores son Ezequiel y Julian Martin. El cual ponemos en practica lo que ellos nos enseñaron a lo largo del curso de RollingCode</small>
-          </div>  
-        </div>
-
-
-      <!-- REDES SOCIALES -->
-        <div class="redes content d-flex flex-column w-50 gap-3">
-              <div class="text-white">
-                <h2 class="fs-3">Redes sociales.</h2>
-              </div>
-              
-              <div class="redes d-flex flex-column text-white">
-                <a class="d-flex align-items-center text-decoration-none gap-1">
-                  <i class="fa-brands fa-instagram fs-4"></i> instagram
-                </a>
-              </div>
-              
-              <div class="redes d-flex flex-column text-white">
-                <a class="d-flex align-items-center text-decoration-none gap-1">
-                  <i class="fa-brands fa-x-twitter fs-4"></i> Twitter
-                </a>
-              </div> 
-
-              <div class="redes d-flex flex-column text-white">
-                <a class="d-flex align-items-center text-decoration-none gap-1">
-                  <i class="fa-brands fa-facebook fs-4"></i> Facebook
-                </a>
-              </div> 
-
-
-        </div>
-
       </div>
 
-      <!-- LEYENDA DE COPY -->
-      <div class="text-secondary text-center my-4 d-flex justify-content-center">
-        <small> &copy  Grupo Nº3 - WEB 15 FULL-STACK</small>
+      <!-- Acerca de nosotros -->
+      <div class="col-12 col-md-4 mb-4">
+        <h2 class="fs-5">Acerca de nosotros</h2>
+        <small class="text-secondary d-block">
+          Somos el grupo número 3 del curso de RollingCode. Nuestros profesores/mentores son Ezequiel y Julián Martín. Ponemos en práctica lo aprendido a lo largo del curso.
+        </small>
       </div>
 
+      <!-- Redes sociales -->
+      <div class="col-12 col-md-4 mb-4">
+        <h2 class="fs-5">Redes sociales</h2>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
+              <i class="fab fa-instagram fs-4"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
+              <i class="fab fa-x-twitter fs-4"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
+              <i class="fab fa-facebook fs-4"></i> Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copy -->
+    <div class="text-center mt-3">
+      <small class="text-secondary">&copy; Grupo Nº3 - WEB 15 FULL-STACK</small>
+    </div>
+  </div>
 </footer>
 
 
