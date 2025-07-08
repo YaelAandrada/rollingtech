@@ -13,13 +13,16 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-
 img {
   object-fit: cover;
   max-width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Tipo De Letra Titulos y Sub */
@@ -28,40 +31,56 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
   color: var(--accent-color);
-  margin-bottom: 1rem;
+  
+  
 }
 
 .sub-title {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.2rem;
-  text-shadow: 2px 2px var(--accent-color);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  
 }
 
 .texto, p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+
+  
 }
 
 a {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+  text-decoration: underline;
+  font-weight: 500;
+
 }
 
 /* Navbar */
 .navbar-brand,
 .nav-link {
   font-family: 'Orbitron', sans-serif;
-  color: var(--text-color) !important;
+  color: var(--text-color) ;
 }
 .nav-link:hover {
-  color: var(--accent-color) !important;
+  color: var(--accent-color);
 }
 
 /* Ajuste de nombre */
 .container-log {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 /* CARDS */
@@ -71,6 +90,7 @@ a {
   color: var(--text-color);
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 #culture .card:hover,
