@@ -1,0 +1,15 @@
+.conteiner-log{
+  display: flex;
+  align-items: center;
+}
+
+.title-content{
+  font-family: 'Orbitron';
+  text-shadow: 2px 2px #2486D5;
+}
+
+.sub-title{
+  font-family: 'Orbitron';
+  text-shadow: 2px 2px #2486D5;
+  font-size: 1.2rem;
+}
