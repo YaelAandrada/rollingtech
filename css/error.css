@@ -1,0 +1,50 @@
+.error-body {
+    background-image: url('/img/error404.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;    
+    width: 100vw;                   
+    height: 100vh;  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tit-error h1{
+   font-size: 100px;
+   
+}
+.tit-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;  
+}
+.ref-error a{
+    text-decoration: none;
+    padding: 10px;
+}
+.ref-error{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+.a1-error{
+      display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;    
+    color: rgba(9, 255, 0, 0.767);                   
+    border: 2px solid rgb(45, 119, 55);          
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.a1-error:hover{
+     background-color: rgb(57, 158, 48);          
+    color: rgb(255, 255, 255);  
+}
+
