@@ -54,7 +54,6 @@ a {
   font-family: 'Orbitron', sans-serif;
   color: var(--text-color) !important;
 }
-
 .nav-link:hover {
   color: var(--accent-color) !important;
 }
