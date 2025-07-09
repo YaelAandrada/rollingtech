@@ -143,10 +143,6 @@ button{
                                                              /* Mobile */
 
 @media (max-width: 480px){
-    .form-body{
-        .title, .logo-title{
-            font-size: x-large;
-        }    
     
 }
 
