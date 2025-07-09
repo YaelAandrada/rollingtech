@@ -15,9 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10px;
-    background: #343A40;
-    
+    background-color: #343a40;
 }
 
 .title, #secure{
@@ -28,6 +26,10 @@
     font-size: larger;
     font-family: "Orbitron";
     color: #2778bb;
+}
+
+.logo-link, #a{
+    text-decoration: none;
 }
 
 .form-body{
@@ -43,7 +45,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #2778bb81;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     background-color: rgba(27, 30, 61, 0.24);
     color: whitesmoke;
@@ -112,6 +114,7 @@ button{
     font-size: 1em;
     cursor: pointer;
     background-color: #640000;
+    text-decoration: none;
     &:hover{
         background-color:var(--colorHeaderFooter);
         outline: 2px solid white;
@@ -127,20 +130,24 @@ button{
     }
 }
 
-/* Tablet */
+                                                            /* Tablet */
 
 @media (max-width: 768px){
    .form-body{
-    background-size: contain;
+   margin-top: 100px;
+   
    }
-}
+   }
 
-/* Mobile */
+
+                                                             /* Mobile */
 
 @media (max-width: 480px){
     .form-body{
-        margin: 60px auto;
-    }
+        .title, .logo-title{
+            font-size: x-large;
+        }    
+    
 }
 
 .form-row{
