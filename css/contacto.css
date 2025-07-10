@@ -9,9 +9,16 @@ a{
 }
 
 body{
-    font-family: orbitron, roboto;
     background-color:#343A40;
     color: #F8F9FA;
+}
+
+h1, h2, h3{
+    font-family: orbitron;
+}
+
+p{
+    font-family: roboto;
 }
 
 .icon-contacto{
