@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:#343A40;
+    color: #F8F9FA;
+}
+
+h1, h2, h3{
+    font-family: orbitron;
+}
+
+p{
+    font-family: roboto;
+}
+
+.icon-contacto{
+    position: fixed;
+    width: 70px;
+    bottom: 2%;
+    right: 4%;
+    transition: all .2s ease;
+    z-index: 99;
+    opacity: 60%;
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 3px black);
+        transform: rotate(10deg);
+        opacity: 100%;
+    }
+}
+
+.btn{
+    background-color:  #2486D5;
+    color:  #F8F9FA;
+}
+
+.icon{
+    color: #2486D5;
+}
+
+.section-title{
+     color: #2486D5;
+}
+
+h3{
+    color: #2486D5;
+}
