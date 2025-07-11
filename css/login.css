@@ -1,0 +1,50 @@
+.content-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-img{
+    width: 80px;
+}
+
+img{
+    width: 100%;
+}
+
+h2, h4{
+    font-family: 'Orbitron';
+}
+
+.enCo{
+    text-decoration: none;
+    color: black;
+}
+
+.enCo:hover{
+    color:  rgb(40, 40, 44);
+}
+
+.crAccount{
+    width: 6em;
+    font-size: 15px;
+}
+
+.cont-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 480px){
+    .cont-button{
+        display: block
+    }
+
+    .crAccount{
+        width: 25em;
+        margin-bottom: 10px;
+    }
+}
