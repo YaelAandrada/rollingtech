@@ -5,30 +5,24 @@
     padding: 0;
 }
 
+:root{
+    color-scheme: dark;
+}
+
 html, body {
     height: 100%;
 }
 
-body {
-    min-height: 100vh;
-    background: #181a1b;
-    color: #f1f1f1;
-    font-family: system-ui, sans-serif;
-    line-height: 1.5;
-}
-
-
-a {
+a{
     color: #8ab4f8;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
-
-img {
-    max-width: 100%;
-    display: block;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
 }
