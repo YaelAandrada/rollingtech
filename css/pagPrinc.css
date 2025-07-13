@@ -14,15 +14,14 @@
     line-height: 1.6;
 }
 
-a {
+.a-cards {
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
 }
 
-p {
+.p-cards {
     font-family: 'Roboto', Courier, monospace;
 }
 
-h2{
+.h2-catDest{
   text-shadow: 2px 2px #2486D5;
 }
