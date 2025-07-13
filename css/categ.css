@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sub-titulo{
+    font-size: 40px;
+    margin: 60px, 10px;
+    padding: 60px, 10px;
+}
