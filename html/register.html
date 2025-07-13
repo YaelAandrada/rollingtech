@@ -6,7 +6,7 @@
     <title>Registrarse</title>
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <!-- Hoja de estilos -->
-     <link rel="stylesheet" href="/css/registro.css">
+     <link rel="stylesheet" href="/css/style.css">
     <!-- Fontawesome -->
      <script src="https://kit.fontawesome.com/8e2d8372f5.js" crossorigin="anonymous"></script>
      <!-- Bootstrap -->
@@ -17,7 +17,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <header>
+    <!-- <header>
         
          <div class="title">
                 <div class="logo-png">
@@ -33,12 +33,22 @@
                     </div>
                 </div>
             </div>
-    </header>
+    </header> -->
     <main class="form-body bg-dark">
- <div class="form-container">
+ <div class="form-container bg-secondary bg-gradient">
     <form class="register-form">
-        <h1 class="register-form_title">Registrarse en Rolling Tech</h1>
-
+            <div class="content p-4">
+                <div class="conteiner-log d-flex w-100 justify-content-center align-items-center">
+                    <figure class="content-img">
+                        <img src="/img/favicon.png" alt="Logo-de-la-pagina">
+                    </figure>
+                <div class="title-content fs-3">
+                    <h2 class="fs-3">ROLLINGTECH</h2>
+                    <h4 class="fs-5">INSUMOS ELECTRONICOS</h4>
+                </div>
+            
+            </div>
+        </div>
         <div class="form-row">
             <div class="form-group">
                 <label for="nombre">Nombre</label>
@@ -79,8 +89,8 @@
             </div>
         </div>
         <div class="form-buttons">
-                <a href="/index.html" class="cancel-button">Cancelar</a>
-                <button type="submit" class="submit-button">Registrarse!</button>
+            <button type="submit" class="submit-button btn btn-primary">Registrarse!</button>
+                <a href="/index.html" class="cancel-button btn btn-warning">Cancelar</a>
             </div>
     </form>
  </div>
