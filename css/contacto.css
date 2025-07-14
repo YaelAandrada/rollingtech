@@ -12,6 +12,7 @@
 .icon-contacto{
     position: fixed;
     width: 70px;
+    height: auto;
     bottom: 2%;
     right: 4%;
     transition: all .2s ease;
