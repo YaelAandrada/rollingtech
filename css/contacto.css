@@ -4,21 +4,9 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
-body{
-    background-color:#343A40;
+.body-contenedor-cont{
+    background-color: #181a1b;
     color: #F8F9FA;
-}
-
-h1, h2, h3{
-    font-family: orbitron;
-}
-
-p{
-    font-family: roboto;
 }
 
 .icon-contacto{
