@@ -11,8 +11,9 @@ html, body {
 
 body{
     min-height: 100vh;
-    background-color: var(--bg-color);
+    background-color: #181a1b;
     line-height: 1.5;
+
 }
 
 
