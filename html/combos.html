@@ -36,6 +36,9 @@
         <form class="d-flex justify-content-center" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-outline-primary" type="submit">Buscar</button>
+          <button style="margin-left: 2px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
         </form>
       </div>
 
@@ -48,10 +51,10 @@
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item active" href="/index.html">Inicio</a></li>
             <li><a class="dropdown-item" href="/html/categorias.html">Productos</a></li>
-            <li><a class="dropdown-item" href="#">Contacto</a></li>
+            <li><a class="dropdown-item" href="/html/nosotros.html">Contacto</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+            <li><a class="dropdown-item" href="/html/">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="/html/register.html">Registrarse</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
           </ul>
@@ -59,6 +62,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <!-- Navbar de categorías -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mt-1">
@@ -90,95 +95,319 @@
         <h2 class="text-center mb-4 h3 mb-0 m-3">COMBOS DE ACTUALIZACION</h2>
             <div class="container">
                 <div class="row">
+                  <!-- Cards de Main / Se decidió hacer con modales para no agregar mas archivos html al proyecto -->
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/proce y moder.jpg" class="card-img-top comb-1" alt="combo-cpu-mother">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador AMD y mother ASUS TUF Gaming</h5>
+                                <p class="card-text text-info">Procesador última generacion AMD Ryzen 5 y Placa madre ASUS TUF</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver más</button>
+                            </div>
+                            <div class="modal fade" id="modal-1" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-1" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Procesador AMD Ryzen 5
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Procesador AMD Ryzen 5 de 8va Generación</strong>. El AMD Ryzen™ 5 8600G con AMD Ryzen AI es el mejor procesador para computadoras de escritorio todo en uno con tarjeta gráfica AMD Radeon™ 760M</strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Placa Madre ASUS TUF
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Equipada con todo lo necesario para jugar</strong>lista para PC con IA avanzada, ranuras DDR5, PCIe 4.0, 2 x DisplayPort, HDMI™, USB trasero de 5Gbps, USB frontal de 5Gbps Tipo-C®, 2 ranuras M.2, Ethernet Realtek de 1Gb, Aura Sync
+      </div>
+    </div>
+  </div>
+</div>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/proce-mother-ram-combo (1).png" class="card-img-top" alt="combo-mother-cpu-ram">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador Intel, ram y mother ASROCK</h5>
+                                <p class="card-text text-info">Procesador Intel Core i3, mother ASROCK y 16gb RAM Kingston</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver más</button>
+                            </div>
+                            <div class="modal fade" id="modal-2" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-2" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/gabinete.png" class="card-img-top" alt="gabinete-perifericos">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Gabinete, teclado, mouse y altavoces</h5>
+                                <p class="card-text text-info">Combo ecónomico gabinete, teclado, mouse y altavoces estereo de alta fidelidad</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver más</button>
+                            </div>
+                            <div class="modal fade" id="modal-3" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-3" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/teclado y mouse.jpeg" class="card-img-top" alt="teclado-y-mouse">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Teclado y mouse REDRAGON Rainbow</h5>
+                                <p class="card-text text-info">Teclado 60% Redragon Rainbow y Mouse RGB inalámbrico</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-4">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-4" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-4" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/C.Actualizacion-Kingston-3_800.jpg" class="card-img-top" alt="ssd-ram-kingston">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Almacenamiento SSD y memorias RAM Kingston</h5>
+                                <p class="card-text text-info">SSD 1TB 6400/mbs y RAM x2 16gb 5400/mts Kingston</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-5">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-5" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-5" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/combo intel r.png" class="card-img-top" alt="">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador Core i5, RAM y mother Gigabyte</h5>
+                                <p class="card-text text-info">Procesador Intel Core i5, RAM 2x 16gb 3200/mhz y mother gigabyte PRO MAX </p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-6">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-6" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-6" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/ram proce amd y placa.jpg" class="card-img-top" alt="Pcs Armadas">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador AMD Ryzen 5 PRO, mother ASUS y RAM Kingston</h5>
+                                <p class="card-text text-info">Procesador AMD Ryzen 5 PRO, mother ASUS b550z y RAM 2x 32gb DDR5</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-7">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-7" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-7" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/compragamer_Imganen_general_0_Kit_Intel_Celeron_G4900_3.10GHz___Mother_Asrock_Z390_Phantom_Gaming_4S_Wi-Fi_ef3780cb-grn.jpg" class="card-img-top" alt="Pcs Armadas">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador Intel Celeron y placa madre Asrock</h5>
+                                <p class="card-text text-info">Procesador Intel celeron bajo consumo y placa madre Asrock multiples fases de alimentación</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-8">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-8" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-8" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
                     <div class="col-md-4 mb-4 h-25 w-15">
                         <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
+                            <img src="/img/img-combos/compragamer_Imganen_general_0_Kit_Procesador_Intel_Core_I7_12700_4.9GHz_Turbo__Con_Video_Integrado____Mother_ASUS_PRIME_H610M-K_CSM_DDR4_S1700___2x_Memoria_Team_DDR4_8GB_3200Mhz_Vulcan_ASUS_TUF_Allianc.jpg" class="card-img-top" alt="Pcs Armadas">
                             <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
+                                <h5 class="card-title text-light">Procesador Intel Core i7, mother ASUS Prime, RAM Vengance</h5>
+                                <p class="card-text text-info">Sorprende a tus enemigos con altos FPS con este kit de actualizacion preparado para vos</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-9">Ver más</button>
                             </div>
                         </div>
+                        <div class="modal fade" id="modal-9" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-9" data-bs-backdrop="static">
+                              <!-- caja de dialogo -->
+                              <div class="modal-dialog modal-dialog-centered">
+                                <!-- contenido del modal -->
+                                <div class="modal-content">
+                                  <!-- Header del modal -->
+                                    <div class="modal-header">
+                                      <h2>Detalles del producto</h2>
+                                      <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                    </div>
+                                    <!-- body del modal -->
+                                    <div class="modal-body">
+                                      <h3>Cuerpo del modal</h3>
+                                    </div>
+                                    <!-- footer del modal -->
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button" class="btn btn-success">Añadir al carrito</button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                     </div>
 
                     <!-- carousel -->
@@ -210,118 +439,134 @@
                 <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-
-
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4 h-25 w-15">
-                        <div class="card bg-gradient bg-black">
-                            <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-                            <div class="card-body">
-                                <h5 class="card-title text-light">Pcs Armadas</h5>
-                                <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-                                <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Modal Carrito -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/combo intel r.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Core i5 RAM 32gb Mother Gigabyte</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">8 </span></div>
+									 							<div>RAM: <span class="value">32gb 5400/mts</span></div>
+									 							<div>Mother: <span class="value">Muy confiable</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$620.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/teclado y mouse.jpeg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Teclado y Mouse REDRAGON PRO RGB</a>
+								 							<div class="product-info">
+									 							<div>Keycaps: <span class="value">ABS</span></div>
+									 							<div>Switches: <span class="value">Outemu RED</span></div>
+									 							<div>Vida util: <span class="value">40 millones</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades: </label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$120.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/proce y moder.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">AMD Ryzen 5 PRO y Mother ASUS TUF</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">6</span></div>
+									 							<div>Frecuencia: <span class="value">4.2Ghz</span></div>
+									 							<div>Mother: <span class="value">No hay algo mejor</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$320.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Total</h3>
+			 					<div class="summary-item"><span class="text">Sin descuento</span><span class="price"> $1.320.000</span></div>
+			 					
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a class="btn btn-primary" style="text-decoration: none; color: white;" href="/html/error.html">Ir a pagar</a>
+      </div>
+    </div>
+  </div>
+</div>
 
     </main>
+
 <footer class="bg-dark text-white pt-4">
   <div class="container">
     <div class="row text-center text-md-start align-items-center">
