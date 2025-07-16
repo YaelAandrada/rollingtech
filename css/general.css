@@ -1,0 +1,33 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background: #181a1b;
+    color: #f1f1f1;
+    line-height: 1.5;
+}
+
+
+a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
