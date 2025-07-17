@@ -6,23 +6,21 @@
 }
 
 
-body {
+.content-princ-body {
     background-color: #181a1b;
     color: #e0e0e0;
     min-height: 100vh;
     line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
-}
-a {
+
+.a-cards {
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
 }
-p {
+
+.p-cards {
     font-family: 'Roboto', Courier, monospace;
 }
 
-h2{
+.h2-catDest{
   text-shadow: 2px 2px #2486D5;
 }

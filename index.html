@@ -18,10 +18,13 @@
     <!-- STYLE PROPIO -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="content-princ-body">
+
 <header class="bg-dark text-white p-2">
+
   <div class="container-fluid">
     <div class="row align-items-center">
+
       <!-- Logo + título -->
       <div class="col-12 col-md-6 d-flex align-items-center mb-2 mb-md-0">
         <img src="/img/favicon.png" alt="Logo-de-la-pagina" class="me-2" style="width: 65px; height: auto;">
@@ -43,8 +46,9 @@
         </form>
       </div>
 
+
       <!-- menu -->
-      <div class="col-12 col-md-2 text-md-end text-center">
+      <div class="col-12 col-md-2 text-md-end text-center d-md-12">
         <div class="dropdown">
           <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
             ☰
@@ -52,15 +56,16 @@
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item active" href="/index.html">Inicio</a></li>
             <li><a class="dropdown-item" href="/html/categorias.html">Productos</a></li>
-            <li><a class="dropdown-item" href="#">Contacto</a></li>
+            <li><a class="dropdown-item" href="/html/nosotros.html">Contacto</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+            <li><a class="dropdown-item" href="/html/login.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="/html/registro.html">Registrarse</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
+            <li><a class="dropdown-item text-danger" href="/html/error.html">Cerrar sesión</a></li>
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -78,7 +83,6 @@
           <li class="nav-item"><a class="nav-link active" href="/html/combos.html">Combos de Actualizacion</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/placasDeVideo.html">Placas de video</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/pcsArmadas.html">PCs Armadas</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/html/CelularesTablet.html">Celulares/Tablet</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/monitores.html">Monitores</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Notebook.html">Notebooks</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Perifericos.html">Perifericos</a></li>
@@ -89,26 +93,28 @@
       </div>
     </div>
   </nav>
+
 </header>
+
    <main>
   <!-- Carousel de banners -->
 
   <div id="carouselExampleInterval" class="carousel slide mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="/img/GAB-CATEGORIAS/baners-categorias (1).png" class="d-block w-100" alt="Banner 1">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="/img/GAB-CATEGORIAS/bannersprins (1).png" class="d-block w-100" alt="Banner 1">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="/img/GAB-CATEGORIAS/baners-categorias (2).png" class="d-block w-100" alt="Banner 2">
+        <img src="/img/GAB-CATEGORIAS/bannersprins (2).png" class="d-block w-100" alt="Banner 2">
       </div>
       <div class="carousel-item">
-        <img src="/img/GAB-CATEGORIAS/baners-categorias (3).png" class="d-block w-100" alt="Banner 3">
+        <img src="/img/GAB-CATEGORIAS/bannersprins (3).png" class="d-block w-100" alt="Banner 3">
       </div>
-      <div class="carousel-item">
-        <img src="/img/GAB-CATEGORIAS/baners-categorias (4).png" class="d-block w-100" alt="Banner 4">
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/img/GAB-CATEGORIAS/bannersprins (4).png" class="d-block w-100" alt="Banner 4">
       </div>
-      <div class="carousel-item">
-        <img src="/img/GAB-CATEGORIAS/baners-categorias (5).png" class="d-block w-100" alt="Banner 5">
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/img/GAB-CATEGORIAS/bannersprins (5).png" class="d-block w-100" alt="Banner 5">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -122,73 +128,86 @@
   </div>
 
   <!--tarjetas -->
-  <h2 class="text-center mb-4 h3 mb-0">Categorias Destacadas</h2>
+  <h2 class="text-center mb-4 h3 mb-0 h2-catDest">Categorias Destacadas</h2>
   <div class="container">
+
     <div class="row">
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
+        <div class="card h-100 bg-gradient bg-black">
           <img src="/img/placa-video.png" class="card-img-top" alt="Producto 1">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-light">Placas de Video</h5>
-            <p class="card-text text-info">Las placas de video son componentes esenciales para cualquier PC gamer. Ofrecemos una amplia gama de modelos, desde opciones de gama media hasta las más potentes del mercado.</p>
-            <a href="/html/placasDeVideo.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Una placa de video, también conocida como tarjeta gráfica, es un componente esencial de la computadora que se encarga de procesar y generar imágenes que se muestran en el monitor. Actúa como un traductor entre el procesador y el dispositivo de visualización, convirtiendo datos en información visual que podemos entender.</small>
+            <hr class="text-info">
+            <a href="/html/placasDeVideo.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
-          <img src="/img/pcs.png" class="card-img-top" alt="Pcs Armadas">
-          <div class="card-body d-flex flex-column">
+        <div class="card h-100 bg-gradient bg-black">
+          <img src="/img/img-pcsarmadas/pc16.png" class="card-img-top" alt="Pcs Armadas">
+          <div class="card-body">
             <h5 class="card-title text-light">Pcs Armadas</h5>
-            <p class="card-text text-info">Ofrecemos lo mejor en PCs armadas, diseñadas para ofrecer un rendimiento excepcional en juegos y tareas exigentes. Tambien Ofrecemos asesoria para que encuentre la Pc que se adapte a sus necesidades, presupuesto.</p>
-            <a href="/html/pcsArmadas.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Una "PC Armada" se refiere a una computadora de escritorio que ha sido ensamblada con componentes individuales seleccionados por el usuario o vendedor, en lugar de ser una unidad pre-configurada de fábrica. Esto permite una mayor personalización y la posibilidad de elegir componentes específicos para satisfacer necesidades particulares.</small>
+            <hr class="text-info">
+            <a href="/html/pcsArmadas.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
+        <div class="card h-100 bg-gradient bg-black">
           <img src="/img/monitor.png" class="card-img-top" alt="Monitores">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-light">Monitores</h5>
-            <p class="card-text text-info">Los monitores gaming están diseñados para mejorar la experiencia de juego en general, ofreciendo una combinación de características como una tasa de refresco más alta que los modelos convencionales, una calidad de imagen optimizada y un diseño atractivo.</p>
-            <a href="/html/monitores.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Un monitor es un dispositivo de salida en informática que muestra visualmente la información procesada por una computadora. Actúa como una interfaz entre el usuario y la máquina, permitiendo la visualización de texto, imágenes, videos y gráficos. Los monitores modernos utilizan tecnologías como LCD o LED </small>
+            <hr class="text-info">
+            <a href="/html/monitores.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
-          <img src="/img/silla.png" class="card-img-top h-50" alt="Butacas Gaming">
+        <div class="card h-100 bg-gradient bg-black">
+          <img src="/img/silla.png" class="card-img-top" alt="Sillas Gaming">
           <div class="card-body">
             <h5 class="card-title text-light">Butacas Gaming</h5>
-            <p class="card-text text-info">Una butaca gaming ergonómica es un tipo de asiento diseñado específicamente para ofrecer comodidad y soporte a los jugadores durante largas horas de juego. Estas butacas se caracterizan por sus características que promueven una buena postura y minimizan el estrés y la fatiga corporal.</p>
-            <a href="/html/Butacas.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Una butaca es un asiento individual, generalmente con brazos y respaldo, que puede ser más grande que una silla pero menos que un sillón. Se utiliza comúnmente en teatros, cines y otros lugares públicos donde se requiere un asiento para un solo espectador. También puede referirse a la entrada o localidad en un teatro o cine.</small>
+            <hr class="text-info">
+            <a href="/html/Butacas.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
+        <div class="card h-100 bg-gradient bg-black">
           <img src="/img/teclado.png" class="card-img-top" alt="Teclados Mecánicos">
           <div class="card-body">
             <h5 class="card-title text-light">Teclados Mecánicos</h5>
-            <p class="card-text text-info">Cada tecla en un teclado mecánico tiene su propio interruptor mecánico. Estos interruptores son dispositivos individuales que se activan con un movimiento físico, lo que significa que registran la pulsación de la tecla cuando se presiona, no necesariamente hasta el fondo. </p>
-            <a href="/html/Perifericos.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Un teclado mecánico se caracteriza por tener un interruptor individual debajo de cada tecla, a diferencia de los teclados de membrana que utilizan una sola capa de goma para todas las teclas. Esta arquitectura individualizada ofrece una experiencia de escritura más precisa, táctil y duradera.</small>
+            <hr class="text-info">
+            <a href="/html/Teclados.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
+        <div class="card h-100 bg-gradient bg-black">
           <img src="/img/periferico.png" class="card-img-top" alt="Perifericos">
           <div class="card-body">
             <h5 class="card-title text-light">Perifericos Gaming</h5>
-            <p class="card-text text-info">Periféricos para juegos: aquellos periféricos o accesorios utilizados para jugar . En pocas palabras, se definen como dispositivos externos diseñados específicamente para jugar videojuegos en teléfonos, computadoras o consolas</p>
-            <a href="/html/Perifericos.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Los periféricos gaming son dispositivos externos diseñados para mejorar la experiencia de juego en computadoras, consolas o dispositivos móviles. Estos incluyen teclados, ratones, auriculares, mandos, y más, todos pensados para ofrecer mayor precisión, comodidad y funciones especializadas para videojuegos.</small>
+            <hr class="text-info">
+            <a href="/html/Perifericos.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Sección de novedades -->
-  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide d-none mt-3 d-md-block" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -196,19 +215,19 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="/img/GAB-CATEGORIAS/baners-categorias (1).png" class="d-block w-100" alt="...">
+      <img src="/img/GAB-CATEGORIAS/bannerPerifericos (3).jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <a href="/html/Ofertas.html" class="btn btn-outline-primary">ir</a>
+        <a href="/html/Perifericos.html" class="btn btn-outline-primary">ir</a>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="/img/GAB-CATEGORIAS/baners-categorias (4).png" class="d-block w-100" alt="...">
+      <img src="/img/GAB-CATEGORIAS/bannerPerifericos (4).jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <a href="/html/Perifericos.html" class="btn btn-outline-primary">ir</a>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/img/GAB-CATEGORIAS/baners-categorias (3).png" class="d-block w-100" alt="...">
+      <img src="/img/GAB-CATEGORIAS/bannerPerifericos (1).jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <a href="/html/Perifericos.html" class="btn btn-outline-primary">ir</a>
       </div>
@@ -224,45 +243,304 @@
   </button>
 </div>
  <!-- Sección de ofertas -->
-<h2 class="text-center mb-4 h3 mb-0 d-none d-md-block">ofertas</h2>
+<h2 class="text-center mb-4 h3 mb-0 d-none mt-3 d-md-block">Ofertas</h2>
   <div class="container d-none d-md-block">
     <div class="row">
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
-          <img src="https://www.gezatek.com.ar/images/banner3.jpg" class="card-img-top" alt="Novedad 1">
+        <div class="card h-100 bg-gradient bg-black">
+          <img src="/img/GAB-CATEGORIAS/Diseño sin título (6).png" class="card-img-top" alt="Novedad 1">
           <div class="card-body">
             <h5 class="card-title text-light">Rebajas en nuestras Pcs gamma media</h5>
-            <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-            <a href="/html/Ofertas.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+            <hr class="text-info">
+            <small class="card-text text-info">Las computadoras de gama media ofrecen un equilibrio entre rendimiento y precio, siendo adecuadas para una amplia gama de usuarios. Son capaces de ejecutar aplicaciones más exigentes como programas de edición de fotos, videos a nivel amateur y jugar a todo a 1080p 165hz sin problemas</small>
+            <hr class="text-info">
+            <a href="/html/pcsArmadas.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
-          <img src="https://www.gezatek.com.ar/images/banner2.jpg" class="card-img-top" alt="Novedad 2">
+        <div class="card h-100 bg-gradient bg-black">
+          <img src="/img/img-pcsarmadas/pc1.png" class="card-img-top" alt="Novedad 2">
           <div class="card-body">
-            <h5 class="card-title text-light">Rebajas en nuestros armados</h5>
-            <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-            <a href="/html/Ofertas.html" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+
+            <h5 class="card-title text-light">Rebajas en nuestros armados de Pcs</h5>
+            <hr class="text-info">
+            <small class="card-text text-info">Una "PC Armada" se refiere a una computadora de escritorio que ha sido ensamblada con componentes individuales seleccionados por el usuario o vendedor, en lugar de ser una unidad pre-configurada de fábrica. Esto permite una mayor personalización y la posibilidad de elegir componentes específicos para satisfacer necesidades particulares</small>
+            <hr class="text-info">
+            <a href="/html/Ofertas.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-gradient bg-black d-flex flex-column">
-          <img src="https://www.gezatek.com.ar/images/banner2.jpg" class="card-img-top" alt="Novedad 3">
+        <div class="card h-100 bg-gradient bg-black">
+          <img src="/img/monitor.png" class="card-img-top" alt="Novedad 3">
           <div class="card-body">
             <h5 class="card-title text-light">Rebajas de toda nuetra linea de Monitores</h5>
-            <p class="card-text text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui molestiae repudiandae accusamus.</p>
-            <a href="https://i.blogs.es/c17f6d/monitores_pc/1366_2000.jpg" class="btn btn-outline-primary text-decoration-none mt-auto w-100">Ver más</a>
+
+            <hr class="text-info">
+            <small class="card-text text-info">Un monitor es un dispositivo de salida que muestra visualmente la información procesada por la computadora. Los monitores modernos utilizan tecnología de pantalla plana, como LED o LCD, para ofrecer imágenes nítidas y colores vibrantes. Son esenciales para la interacción del usuario con la computadora, permitiendo ver todo, desde la interfaz del sistema operativo hasta videos y juegos.</small>
+            <hr class="text-info">
+            <a href="/html/monitores.html" class="btn btn-outline-primary w-100 text-decoration-none">Ver más</a>
           </div>
         </div>
       </div>
     </div>
   </div>
  
+<!-- Modal Carrito -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/combo intel r.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Core i5 RAM 32gb Mother Gigabyte</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">8 </span></div>
+									 							<div>RAM: <span class="value">32gb 5400/mts</span></div>
+									 							<div>Mother: <span class="value">Muy confiable</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$620.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/teclado y mouse.jpeg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Teclado y Mouse REDRAGON PRO RGB</a>
+								 							<div class="product-info">
+									 							<div>Keycaps: <span class="value">ABS</span></div>
+									 							<div>Switches: <span class="value">Outemu RED</span></div>
+									 							<div>Vida util: <span class="value">40 millones</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades: </label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$120.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/proce y moder.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">AMD Ryzen 5 PRO y Mother ASUS TUF</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">6</span></div>
+									 							<div>Frecuencia: <span class="value">4.2Ghz</span></div>
+									 							<div>Mother: <span class="value">No hay algo mejor</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$320.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Total</h3>
+			 					<div class="summary-item"><span class="text">Sin descuento</span><span class="price"> $1.320.000</span></div>
+			 					
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a class="btn btn-primary" style="text-decoration: none; color: white;" href="/html/error.html">Ir a pagar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      
+      <div class="modal-body">
+       <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/notebook/4.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Acer Nitro V |Procesador Intel Core i7-13620H</a>
+								 							<div class="product-info">
+                                <div>Procesador: <span class="value">Intel Core i7-13620H</span></div>
+                                <div>Memoria RAM: <span class="value">16 GB DDR5</span></div>
+                                <div>Almacenamiento: <span class="value">1 TB SSD Gen 4</span></div>	
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$620.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/notebook/16.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Apple Laptop MacBook Pro 2024 con M4 Pro</a>
+								 							<div class="product-info">
+                                <div>Procesador: <span class="value">M4 Pro</span></div>
+                                <div>Memoria RAM: <span class="value">16 GB</span></div>
+                                <div>Almacenamiento: <span class="value">512 GB SSD</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades: </label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$2.096.719,54</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/notebook/1.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">HP Stream - Laptop BrightView HD de 14 pulgadas, Intel Celeron</a>
+								 							<div class="product-info">
+                                  <div>Procesador: <span class="value">Intel Celeron</span></div>
+                                  <div>Memoria RAM: <span class="value">16 GB</span></div>
+                                  <div>Almacenamiento: <span class="value">288 GB</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$500.719,54</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Total</h3>
+			 					<div class="summary-item"><span class="text">Sin descuento</span><span class="price"> $3.700.000</span></div>
+			 					<div class="summary-item"><span class="text">Descuento (10%)</span><span class="price"> -$370.000</span></div>
+			 					<div class="summary-item"><span class="text">Total con descuento</span><span class="price"> $3.330.000</span></div>
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+      </div>
 
 
 
+
+
+
+
+
+
+
+
+
+  
 
 </main>
 
@@ -291,7 +569,7 @@
       <!-- Redes sociales -->
       <div class="col-12 col-md-4 mb-4">
         <h2 class="fs-5">Redes sociales</h2>
-        <ul class="list-unstyled d-flex flex-column gap-2">
+        <ul class="list-unstyled d-flex flex-column gap-2 align-items-center align-items-lg-start">
           <li>
             <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
               <i class="fab fa-instagram fs-4"></i>Instagram
@@ -317,6 +595,7 @@
     </div>
   </div>
 </footer>
+
 
     <!-- BOOSTRAP 5 -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

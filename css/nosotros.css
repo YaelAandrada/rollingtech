@@ -8,51 +8,36 @@
 }
 
 /* Global */
-body {
+.body-content {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #181a1b;
+  color: #F8F9FA;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-img {
+/* img {
   object-fit: cover;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  
-}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
 
-
-h1, h2, h3, h4, h5, h6,
+/* Tipo De Letra Titulos y Sub */
 .titulo {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600;
-  
-  
-  
+  color: var(--accent-color);
 }
 
-.sub-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-  text-align: center;
-  
-}
-
-.texto, p {
+.texto {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--text-color);
+  color: #F8F9FA;
   margin-bottom: 1rem;
-
-  
 }
 
 a {
@@ -62,7 +47,6 @@ a {
   transition: color 0.3s ease;
   text-decoration: underline;
   font-weight: 500;
-
 }
 
 /* Navbar */
@@ -84,8 +68,8 @@ a {
 
 /* CARDS */
 #culture .card,
-#mission-vision .card {
-  background-color: var(--header-bg);
+#mission-vision, .card {
+  background-color: #343A40;
   color: var(--text-color);
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

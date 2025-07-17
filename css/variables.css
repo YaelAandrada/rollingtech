@@ -9,11 +9,11 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #343A40;
-  --text-color: #F8F9FA;
-  --header-bg: #4E5D6C;
-  --accent-color: #2486D5;
-  --hover-color: #C2C5CA;
-  --btn-text: #2C2C2C;
-  --footer-bg: #4E5D6C;
+  --bg--color: #343A40;
+  --text--color: #F8F9FA;
+  --header--bg: #4E5D6C;
+  --accent--color: #2486D5;
+  --hover--color: #C2C5CA;
+  --btn--text: #2C2C2C;
+  --footer--bg: #4E5D6C;
 }
