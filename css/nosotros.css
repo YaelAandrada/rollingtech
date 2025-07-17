@@ -52,7 +52,6 @@ a {
 /* Navbar */
 .navbar-brand,
 .nav-link {
-  font-family: 'Orbitron', sans-serif;
   color: var(--text-color) ;
 }
 .nav-link:hover {
