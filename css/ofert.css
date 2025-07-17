@@ -1,0 +1,13 @@
+.content-ofert{
+    background-color: green;
+    z-index: 99;
+    position: absolute;
+    border-radius: 5px 0px 1.8em;
+    color: white;
+    text-align: center;
+    padding: 0.4em;
+}
+
+.text-ofert-h6{
+    font-size: 0.8em;
+}
