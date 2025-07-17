@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="bg-dark text-white p-2">
+<header class="bg-dark text-white p-2">
+
   <div class="container-fluid">
     <div class="row align-items-center">
+
       <!-- Logo + título -->
       <div class="col-12 col-md-6 d-flex align-items-center mb-2 mb-md-0">
         <img src="/img/favicon.png" alt="Logo-de-la-pagina" class="me-2" style="width: 65px; height: auto;">
@@ -36,10 +38,13 @@
         <form class="d-flex justify-content-center" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-outline-primary" type="submit">Buscar</button>
+          <button style="margin-left: 2px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
         </form>
       </div>
 
-      <!-- menu -->
+      <!-- menu hamburguesa-->
       <div class="col-12 col-md-2 text-md-end text-center">
         <div class="dropdown">
           <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,15 +53,16 @@
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item active" href="/index.html">Inicio</a></li>
             <li><a class="dropdown-item" href="/html/categorias.html">Productos</a></li>
-            <li><a class="dropdown-item" href="#">Contacto</a></li>
+            <li><a class="dropdown-item" href="/html/contacto.html">Contacto</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+            <li><a class="dropdown-item" href="/html/login.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="/html/register.html">Registrarse</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-danger" href="#">Cerrar sesión</a></li>
+            <li><a class="dropdown-item text-danger" href="/html/error.html">Cerrar sesión</a></li>
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -72,12 +78,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav flex-wrap">
           <li class="nav-item"><a class="nav-link active" href="/html/combos.html">Combos de Actualizacion</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/html/placasDeVideo.html">Placa de video</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/html/placasDeVideo.html">Placas de video</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/pcsArmadas.html">PCs Armadas</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/html/CelularesTablet.html">Celulares/Tablet</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/monitores.html">Monitores</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Notebook.html">Notebooks</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/html/Perifericos.html">Periferico</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/html/Perifericos.html">Perifericos</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Butacas.html">Butacas</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Accesorios.html">Accesorios</a></li>
           <li class="nav-item"><a class="nav-link active" href="/html/Ofertas.html">Ofertas</a></li>
@@ -85,6 +90,7 @@
       </div>
     </div>
   </nav>
+
 </header>
     <main>
         <h2 class="text-center mb-4 h3 mb-0 m-3">COMBOS DE ACTUALIZACION</h2>
@@ -314,7 +320,128 @@
 
 
 
-
+<!-- Modal Carrito -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/combo intel r.png">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Core i5 RAM 32gb Mother Gigabyte</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">8 </span></div>
+									 							<div>RAM: <span class="value">32gb 5400/mts</span></div>
+									 							<div>Mother: <span class="value">Muy confiable</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$620.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/teclado y mouse.jpeg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Teclado y Mouse REDRAGON PRO RGB</a>
+								 							<div class="product-info">
+									 							<div>Keycaps: <span class="value">ABS</span></div>
+									 							<div>Switches: <span class="value">Outemu RED</span></div>
+									 							<div>Vida util: <span class="value">40 millones</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades: </label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$120.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="/img/img-combos/proce y moder.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">AMD Ryzen 5 PRO y Mother ASUS TUF</a>
+								 							<div class="product-info">
+									 							<div>Nucleos: <span class="value">6</span></div>
+									 							<div>Frecuencia: <span class="value">4.2Ghz</span></div>
+									 							<div>Mother: <span class="value">No hay algo mejor</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Unidades:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$320.000</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Total</h3>
+			 					<div class="summary-item"><span class="text">Sin descuento</span><span class="price"> $1.320.000</span></div>
+			 					
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a class="btn btn-primary" style="text-decoration: none; color: white;" href="/html/error.html">Ir a pagar</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -339,7 +466,7 @@
 
       <!-- Acerca de nosotros -->
       <div class="col-12 col-md-4 mb-4">
-        <h2 class="fs-5">Acerca de nosotros</h2>
+        <h2 class="fs-5"><a class="text-light text-center" href="/html/nosotros.html" style="text-decoration: none;">Acerca de nosotros</a></h2>
         <small class="text-secondary d-block">
           Somos el grupo número 3 del curso de RollingCode. Nuestros profesores/mentores son Ezequiel y Julián Martín. Ponemos en práctica lo aprendido a lo largo del curso.
         </small>

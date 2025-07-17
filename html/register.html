@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!-- Hoja de estilos -->
+     <link rel="stylesheet" href="/css/style.css">
+    <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/8e2d8372f5.js" crossorigin="anonymous"></script>
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+    <!-- Fuente -->
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <main class="form-body bg-dark">
+ <div class="form-container bg-secondary bg-gradient">
+    <form class="register-form">
+            <div class="content p-4">
+                <div class="conteiner-log d-flex w-100 justify-content-center align-items-center">
+                    <figure class="content-img">
+                        <img src="/img/favicon.png" alt="Logo-de-la-pagina">
+                    </figure>
+                <div class="title-content fs-3">
+                    <h2 class="fs-3">ROLLINGTECH</h2>
+                    <h4 class="fs-5">INSUMOS ELECTRONICOS</h4>
+                </div>
+            
+            </div>
+        </div>
+        <div class="text-center">
+            <h2 class="text-dark fw-bold">Registrarse</h2>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Nombre y apellido</label>
+                <input type="text" id="name" name="name" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,}$" maxlength="25" minlength="3">
+            </div>
+            <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,}$" maxlength="15" minlength="3">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="mail">Correo electronico</label>
+                <input type="email" id="mail" name="mail" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" maxlength="60">
+            </div>
+            <div class="form-group">
+                <label for="phone">Número de telefono</label>
+                <input type="text" id="phone" name="phone" required pattern="^\d{10}$">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="addres">Domicilio</label>
+                <input type="addres" id="addres" name="addres" required  maxlength="35" minlength="8">
+            </div>
+            <div class="form-group">
+                <label for="zip">Código postal</label>
+                <input type="number" id="zip-code" name="zip-code" required pattern="^\d{4}$|^[A-Za-z]\d{4}[A-Za-z]{3}$" maxlength="60">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" maxlength="25" minlength="8">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-promotion">
+                <label for="">Recibir ofertas promocionales</label>
+                <input type="radio" id="promocion" name="promocion" value="true">
+            </div>
+            <div class="form-group">
+                <p class="terms">Al registrarse usted acepta los <a class="link fw-bolder" href="/html/error.html">Terminos y condiciones</a></p>
+            </div>
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="submit-button btn btn-primary">Registrarse!</button>
+                <a href="/index.html" class="cancel-button btn btn-warning">Cancelar</a>
+            </div>
+    </form>
+ </div>
+
+
+
+    </main>
+
+<!-- BOOSTRAP 5 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+   
+</body>
+</html>
