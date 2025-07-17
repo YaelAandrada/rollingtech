@@ -39,33 +39,33 @@
         <form class="d-flex justify-content-center align-items-center flex-column px-3 w-100">
             <div class="content w-100 d-flex align-center justify-content-center">
                 <h2 class="text-black">
-                    LOGIN
+                    Iniciar Sesion
                 </h2>
             </div>
             <div class="mb-3 w-100">
-                <label for="exampleInputEmail1" class="form-label">Gmail</label>
-                <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="50">
             </div>
             <div class="mb-3 w-100">
                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control w-100" id="exampleInputPassword1">
-                <a href="#" class="enCo">¿Olvidaste tu contraseña?</a>
+                <input type="password" class="form-control w-100" id="exampleInputPassword1" required maxlength="30" minlength="8">
+                <a href="/html/error.html" class="enCo">¿Olvidaste tu contraseña?</a>
             </div>
             <div class="cont-button mb-3">
 
                 <div class="col-3">
                     <button class="crAccount btn btn-primary">
-                        LOGIN
+                        Ingresar
                     </button>
                 </div>
 
                 <div class="col-3">
-                    <a href="" class="crAccount btn btn-warning">VOLVER</a>
+                    <a href="/index.html" class="crAccount btn btn-warning">Cancelar</a>
                 </div>
             </div>
 
             <div class="content mb-3">
-                ¿No tienes cuenta? Crea una <a href="" class="link-warning">acá</a>
+                ¿No tienes cuenta? Crea una <a href="/html/register.html" class="link-warning">acá</a>
             </div>
         </form>
     </div>
